@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#burger{
+    width: 40px;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.about {
+    padding: 40px;
+    text-align: center;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc; 
+}
+
+/* Zadanie 1: Responsywna galeria */
+@media (min-width: 1200px) {
+    .gallery img {
+        width: 250px;
+    }
+} 
+
+/* Zadanie 2: Podpisy pod zdjęciami - style dla figcaption */
+figcaption {
+    font-size: 15px;
+    color: #a53d3d;
+    text-align: center;
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+} 
+
+/* Zadanie 3: Sekcja "O mnie" - zdjęcie obok tekstu */
+.about {
+    display: flex;
+    align-items: center;
+}
+.about img {
+    width: 150px;
+    margin-left: 20px;
+    border-radius: 50%;
+} 
+
+/* Zadanie 4: Responsywne menu - hamburger */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; 
+    }
+    /* Style dla ikony hamburgera (dodaj HTML w <nav> w index.html) */
+    /* .hamburger-icon { ... } */
+} 
